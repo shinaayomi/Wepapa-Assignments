@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<title>Wejapa To-Dos</title>
+<style>
+header {
+	margin-top: 50px;
+	background: purple;
+	padding: 40px;
+	
+	color: white;
+	font-family: segeon;
+	text-align: center;
+	font-size: 30px;
+	}
+input[type=text] {
+	margin-top: 20px;
+	width: 300px;
+	padding: 10px;
+	display: block;}
+input[type=submit] {
+	margin-top: 20px;
+	
+	width: 100px;
+	padding: 10px;
+	display: inline-block;
+	}
+div {	display:flex;align-items: center;justify-content: center;
+	background-color: rgba(239,236,249,0.5);
+	}
+</style>
+<body>
+<header>
+Wejapa To-Dos</header>
+<div>
+<form>
+<input type="text">
+<input type="text">
+<input type="submit" value="submit">
+<input type="submit" value="delete" style="float:right;" onclick="myFunction()">
+</form>
+<script>
+function myFunction() {var deleteconfirm = window.confirm("Are you sure you want to delete the data?");}
+</script>
+</div>
+</body>
+</html>
