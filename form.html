@@ -6,20 +6,17 @@ header {
 	margin-top: 50px;
 	background: purple;
 	padding: 40px;
-	
 	color: white;
-	font-family: segeon;
+	font-family: 'Segoe UI', 'Roboto';
 	text-align: center;
 	font-size: 30px;
 	}
-input[type=text] {
-	margin-top: 20px;
+input[type=text], input[type=password] {
+	margin-bottom: 20px;
 	width: 300px;
 	padding: 10px;
 	display: block;}
 input[type=submit] {
-	margin-top: 20px;
-	
 	width: 100px;
 	padding: 10px;
 	display: inline-block;
@@ -33,13 +30,14 @@ div {	display:flex;align-items: center;justify-content: center;
 Wejapa To-Dos</header>
 <div>
 <form>
-<input type="text">
-<input type="text">
+Username:<input type="text" placeholder="Input your username" required>
+Password:<input type="password" placeholder="Input your password" min="6" required>
 <input type="submit" value="submit">
 <input type="submit" value="delete" style="float:right;" onclick="myFunction()">
 </form>
 <script>
-function myFunction() {var deleteconfirm = window.confirm("Are you sure you want to delete the data?");}
+function myFunction() {
+var deleteConfirm = window.confirm("Are you sure you want to delete the data?");}
 </script>
 </div>
 </body>
