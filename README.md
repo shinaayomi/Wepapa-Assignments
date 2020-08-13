@@ -1,2 +1,2 @@
 # Wepapa-Assignments
-Javascript
+Javascript Assignment
