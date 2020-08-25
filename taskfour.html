@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Wejapa Task 4</title>
+<style>
+
+body {
+font-family: 'Segoe UI', 'Roboto', arial, sans-serif;
+margin:0;
+padding:0;
+font-size:18px;
+}
+header {
+	padding: 0 200px;
+	height: 480px;
+	background-color: #ffffff;
+	}
+main {
+	padding: 0 200px;
+	height: 700px;
+	background-color:#DDE0E3;
+	}
+footer {
+	
+	color: #fff;;
+	height: 400px;
+	}
+h1 {
+	font-size:50px;
+	padding:0;margin:0;
+	}
+ul {
+	margin:0;
+	padding: 4px 4px;
+	}
+nav ul li {	list-style-type: none;
+	background-color: ;
+	display: inline-block;
+	padding: 10px 25px;
+	margin: 10px 0;
+	}
+nav ul li:hover {
+transform: scale(1.4);
+cursor: pointer;
+
+}
+.sp {border-radius: 25px;background: #00e6e6; color: white;
+	}
+.sp:hover {background-color: transparent;color:#000;}
+
+.suspend {
+	background-color: rgba(0,0,0,0.5);
+	width: 700px;
+	padding: 20px;
+	position:absolute;
+	z-index: 1;
+	top: 442px;
+	left: 50%;
+	transform: translate(-50%);
+	text-align:center;
+	border-radius: 7px;
+	}
+.suspends {
+	display: none;
+	margin-top: 20px;
+	margin-left: -22px;
+	position: absolute;
+	z-index: 2;
+	}
+.suspend1 {
+	width: 732px;
+	background-color: #fff;
+	padding: 5px 20px;
+	border-radius: 7px;
+	text-align: left;
+	}
+a {text-decoration: none;}
+
+.suspend1 button {
+	background-color: #00e6e6;
+	color: white;
+	text-align: center;
+	width: 100px;
+	padding: 13px;
+	margin: 5px;
+	}
+
+input[type=link], input[type=submit] {
+	border-radius: 5px;
+	padding: 10px;
+	border: none;
+	}
+input[type=submit] {
+	background-color: #00e6e6;
+	color: white;
+	text-align: center;
+	width: 100px;
+	}
+
+.main1 {
+	padding-top: 100px;
+	text-align:center;
+	overflow: auto;
+	}
+fieldset {
+	position: absolute;
+	z-index: 1;
+	text-align: left;
+	background-color: #fff;
+	border-color: transparent;
+	width: 300px;
+	margin: 30px;
+	border-radius: 5px;
+	}
+.fieldset2 {
+	top:740px;left:550px;
+	}
+.fieldset3 {
+	top:775px;left:900px;
+	}
+legend {
+	width: 50px;
+	height: 50px;
+	background-color: #000;
+	border-radius: 50%;
+	}
+.line {
+	width:600px;
+	height:10px;
+	background-color:cyan;
+	position:absolute;
+	top:890px;
+	left: 350px;
+	}
+
+button {
+	background: #00e6e6; 
+	color: #fff;
+	border: none;
+	padding: 15px 25px;
+	border-radius: 10px;
+	}
+
+.footer1 {
+	padding: 0 200px;
+	background-color: rgba(0,0,0,0.5);
+	text-align: center;
+	height: 200px;
+	overflow: auto;
+	}
+.footer2 {
+	padding: 30px 200px;
+	height: 300px;
+	background-color: #000;
+	} 
+table {float:left;
+	display: inline-block;
+	width: 20%;
+	text-align: left;
+	}
+th, td {
+	padding-bottom: 10px;
+	}
+@media only screen and (max-width: 1200px) {
+	header, main, .footer1, .footer2 {padding: 0 30px;}
+	.fieldset2 {left:383px;}
+	.fieldset3 {left:735px;}
+	}
+@media only screen and (max-width: 700px) {
+	* {box-sizing:border-box;}
+	header, main, .footer1, .footer2 {padding: 0 20px;}
+	main {height:1200px;}
+	.footer2 {height:700px;}
+	fieldset {left:100px;}
+	.fieldset2 {top:1027px;left:100px;}
+	.fieldset3 {top:1330px;left:100px;}
+	.line {transform:rotate(90deg);top:1150px;left:-15px;}
+	table {display:block;width:100%;margin:10px 38%;
+		text-align:center;}
+	.suspend {width:400px;transform: translate(-50%,-24%);}
+	input[type=link], input[type=submit] {width:315px;display:block;margin:10px 20px;}
+	.button1 {text-align:center;}
+	.suspend1 {width:400px;}
+	}
+	
+</style>
+</head>
+
+<body>
+
+<header>
+
+<nav><ul>
+<li style="padding:0;font-size:30px;">Shortly</li>
+<li>Features</li>
+<li>Pricing</li>
+<li>Resources</li>
+
+<attr style="float:right;">
+<li>Login</li>
+<li class="sp">Sign Up</li>
+</attr>
+</ul>
+</nav>
+
+<div style="width:450px;">
+<h1>More than just shorter links</h1>
+<p>Build your brand's recognition and get detailed
+insights on how your links are performing</p>
+</div>
+<div class="button1">
+<button>Get Started</button>
+</div>
+</header>
+
+<div class="suspend">
+<form>
+<input type="link" onclick="myFunction()" name="link" size="65" placeholder="Shorten a link here..." required>
+<input type="submit" value="Shorten It!">
+
+<div class="suspends" id="demo">
+<p class="suspend1"><a href="https://www.frontendmentor.io">http://www.frontendmentor.io</a>
+https://rel.ink/k4lKyk<button>copy</button></p>
+
+<p class="suspend1"><a href="https://twitter.com/frontendmentor">https://twitter.com/frontendmentor</a> 
+https://rel.ink/gxOXp9<button>copy</button></p>
+
+<p class="suspend1"><a href="https://www.linkedin.com/company/frontend-mentor">https://www.linkedin.com/company/frontend-mentor</a>
+https://rel.ink/gob3X9<button>copy</button></p>
+</div>
+</form>
+</div>
+<script>
+function myFunction() {
+document.getElementById("demo").style.display = 'block';
+	}
+</script>
+
+<main>
+<div class="main1">
+<h2>Advanced Atatistics</h2>
+<p>Track how your links are performing across the web with our advanced
+statics dashboard</p> 
+</div>
+
+
+<fieldset><legend></legend>
+<h4>Brand Recognition</h4>
+<p>Build your branch recognition with each click.
+Generic links don't mean a thing. Branded links help
+instil confidence in your content.</p>
+</fieldset>
+
+<fieldset class="fieldset2"><legend></legend>
+<h4>Detailed Records</h4>
+<p>Gain insights into who is clicking your links.
+knowing when and where people engage with your content
+helps inform better decisions.</p>
+</fieldset>
+
+<fieldset class="fieldset3"><legend></legend>
+<h4>Fully Customizable</h4>
+<p>Improve brand awareness and content discoverability through
+customizable links, supercharging audience engagement.</p>
+</fieldset>
+
+<div class="line"></div>
+</main>
+
+<footer>
+<div class="footer1">
+<h3>Boost your links today</h3>
+<button>Get Started</button>
+</div>
+
+<div class="footer2">
+
+<table>
+<tr>
+<th style="font-size:30px;">Shortly</th>
+</tr>
+</table>
+
+<table>
+<tr><th>Features</th></tr>
+<tr><td>Link Shortening</td></tr>
+<tr><td>Branded Links</td></tr>
+<tr><td>Analytics</td></tr>
+</table>
+
+<table>
+<tr><th>Resources</th></tr>
+<tr><td>Blog</td></tr>
+<tr><td>Developers</td></tr>
+<tr><td>Support</td></tr>
+</table>
+
+<table>
+<tr><th>Company</th></tr>
+<tr><td>About</td></tr>
+<tr><td>Our Team</td></tr>
+<tr><td>Careers</td></tr>
+<tr><td>Contact</td></tr>
+</table>
+
+<table>
+<tr>
+<th>Social Media</th>
+</tr>
+</table>
+
+</div>
+</footer>
+</body>
+</html>
